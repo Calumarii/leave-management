@@ -29,6 +29,7 @@ namespace leave_management.Controllers
             var leavetypes = _repo.FindAll().ToList();
             var model = _mapper.Map<List<LeaveType>, List<LeaveTypeVM>>(leavetypes);
                 return View(model);
+
         }
 
         // GET: LeaveTypesController/Details/5
